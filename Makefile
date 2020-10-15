@@ -5,5 +5,5 @@ EXE = gasp
 .PHONY: install
 install:
 	cp libgstairplay.so /usr/local/lib/
-	#-rm $(BINDIR)/$(EXE)
+	-rm $(BINDIR)/$(EXE)
 	ln -s $(current_dir)/start_airplay_server.sh $(BINDIR)/$(EXE)
